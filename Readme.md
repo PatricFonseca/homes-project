@@ -1,6 +1,6 @@
 # Projeto
 
-![alt text](/home/patric/Projects/angular/first-app-lesson-00/src/assets/homes-project.png)
+![alt text]([/home/patric/Projects/angular/first-app-lesson-00/src/assets/homes-project.png](https://github.com/PatricFonseca/homes-project/blob/main/src/assets/homes-project.png))
 
 Projeto foi feito com base na documentação do _Angular_, afim de testar as funcionalidades
 do framework.
