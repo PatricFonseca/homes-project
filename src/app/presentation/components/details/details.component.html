@@ -1,0 +1,43 @@
+<article>
+  <img
+    class="listing-photo"
+    [src]="housingLocation?.photo"
+    alt="Exterior photo of {{ housingLocation?.name }}"
+  />
+
+  <section class="listing-description">
+    <h2 class="listing-heading">{{ housingLocation?.name }}</h2>
+    <p class="listing-location">
+      {{ housingLocation?.city }}, {{ housingLocation?.state }}
+    </p>
+  </section>
+  <section class="listing-features">
+    <h2 class="section-heading">Sobre este local</h2>
+    <ul>
+      <li>Unidades disponíveis: {{ housingLocation?.availableUnits }}</li>
+      <li>
+        Esta unidade tem wifi: {{ housingLocation?.wifi ? "Sim" : "Não" }}
+      </li>
+      <li>
+        Esta unidade tem lavanderia:
+        {{ housingLocation?.laundry ? "Sim" : "Não" }}
+      </li>
+    </ul>
+  </section>
+  <div class="container">
+    <section class="listing-apply">
+      <h2 class="section-heading">Entre em contato agora</h2>
+      <form [formGroup]="applyForm" (submit)="submitApplication()">
+        <label for="first-name">Nome</label>
+        <input id="first-name" type="text" formControlName="firstName" />
+
+        <label for="last-name">Sobrenome</label>
+        <input id="last-name" type="text" formControlName="lastName" />
+
+        <label for="email">Email</label>
+        <input id="email" type="email" formControlName="email" />
+        <button type="submit" class="primary">Enviar</button>
+      </form>
+    </section>
+  </div>
+</article>
