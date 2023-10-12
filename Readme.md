@@ -1,6 +1,6 @@
 # Projeto
 
-![alt text]([https://github.com/PatricFonseca/homes-project/blob/main/src/assets/homes-project.png)
+![alt text]([https://github.com/PatricFonseca/homes-project/blob/main/src/assets/homes-project.png])
 
 Projeto foi feito com base na documentação do _Angular_, afim de testar as funcionalidades
 do framework.
