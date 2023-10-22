@@ -12,7 +12,8 @@ body {
   --secondary-color: #8b89e6;
   --tertiary-color: #a93f55;
   --dark: #33312e;
-  --accent-color: #e8e7fa;
+  --accent-color: #f4f4ff;
+  /* --accent-color: #deddf0; */
   --shadow-color: #e8e8e8;
 }
 

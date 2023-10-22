@@ -4,15 +4,20 @@ import { ActivatedRoute } from '@angular/router';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { HousingService } from '../housing-location/housing.service';
 import { HousingLocationEntity } from '../../../data/repository/housing-location-entity';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import {faCoffee} from '@fortawesome/free-solid-svg-icons'
 
 @Component({
   selector: 'app-details',
   standalone: true,
-  imports: [CommonModule, ReactiveFormsModule],
+  imports: [CommonModule, FontAwesomeModule, ReactiveFormsModule],
   templateUrl: './details.component.html',
   styleUrls: ['./details.component.css'],
 })
 export class DetailsComponent {
+  //icons
+  faCoffee = faCoffee
+
   route: ActivatedRoute = inject(ActivatedRoute);
   housingService = inject(HousingService);
   housingLocation: HousingLocationEntity | undefined;

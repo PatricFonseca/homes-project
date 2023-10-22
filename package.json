@@ -17,15 +17,18 @@
     "@angular/animations": "^16.1.0-rc.0",
     "@angular/common": "^16.1.0-rc.0",
     "@angular/compiler": "^16.1.0-rc.0",
-    "@angular/core": "^16.1.0-rc.0",
+    "@angular/core": "^16.2.9",
     "@angular/forms": "^16.1.0-rc.0",
     "@angular/platform-browser": "^16.1.0-rc.0",
     "@angular/platform-browser-dynamic": "^16.1.0-rc.0",
     "@angular/router": "^16.1.0-rc.0",
+    "@fortawesome/angular-fontawesome": "^0.13.0",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
     "angular-in-memory-web-api": "~0.16.0",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.14.0"
+    "zone.js": "^0.13.0"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^16.1.0-rc.0",

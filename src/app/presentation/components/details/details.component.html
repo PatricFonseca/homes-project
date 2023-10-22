@@ -4,27 +4,32 @@
     [src]="housingLocation?.photo"
     alt="Exterior photo of {{ housingLocation?.name }}"
   />
-
+  
   <section class="listing-description">
     <h2 class="listing-heading">{{ housingLocation?.name }}</h2>
     <p class="listing-location">
       {{ housingLocation?.city }}, {{ housingLocation?.state }}
     </p>
   </section>
+  <div class="container"> 
   <section class="listing-features">
     <h2 class="section-heading">Sobre este local</h2>
     <ul>
-      <li>Unidades disponíveis: {{ housingLocation?.availableUnits }}</li>
+      <li><i class="icon ph ph-house-line"></i> Unidades disponíveis: {{ housingLocation?.availableUnits }}</li>
       <li>
-        Esta unidade tem wifi: {{ housingLocation?.wifi ? "Sim" : "Não" }}
+        <i class="icon ph ph-wifi-high"></i> Esta unidade tem wifi: {{ housingLocation?.wifi ? "Sim" : "Não" }}
       </li>
       <li>
+        <img class="icon" style="width: 18.68px; height: 18px;" src="/assets/icons/washing-machine.svg"/>
+        <!-- <fa-icon [icon]="['fa', 'washing-machine']"></fa-icon> -->
+        <!-- <fa-icon [icon]="faCoffee" class="fa-regular faCoffee"></fa-icon> -->
         Esta unidade tem lavanderia:
         {{ housingLocation?.laundry ? "Sim" : "Não" }}
       </li>
     </ul>
   </section>
-  <div class="container">
+  <!-- //container -->
+  
     <section class="listing-apply">
       <h2 class="section-heading">Entre em contato agora</h2>
       <form [formGroup]="applyForm" (submit)="submitApplication()">

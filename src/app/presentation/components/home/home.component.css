@@ -1,4 +1,7 @@
 .results {
+  /* Defino um valor padrão, para o footer não piscar */  
+  min-height: 560px;
+
   display: grid;
   column-gap: 14px;
   row-gap: 14px;

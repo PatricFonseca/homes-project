@@ -20,7 +20,6 @@ export class HomeComponent {
   filteredLocationList: HousingLocationEntity[] = [];
 
   constructor() {
-    // this.housingLocationList = this.housingService.getAllHousingLocations();
     this.housingService
       .getAllHousingLocations()
       .then((housingLocationList: HousingLocationEntity[]) => {
