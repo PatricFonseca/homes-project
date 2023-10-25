@@ -1,12 +1,13 @@
 <section>
-  <form (ngSubmit)="filterResults(filter.value)">
-    <input
+  <!-- (ngSubmit)="f" -->
+  <form id="filter">
+    <input  
       type="text"
       placeholder="Filtrar por cidade"
       #filter
       (keydown.enter)="$event.preventDefault(); filterResults(filter.value)"
     />
-    <button class="primary" type="submit" (click)="filterResults(filter.value)">
+    <button class="primary" type="button" (click)="filterResults(filter.value)">
       Buscar
     </button>
   </form>

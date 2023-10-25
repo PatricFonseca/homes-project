@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
-import { HomeComponent } from './presentation/components/home/home.component';
-import { DetailsComponent } from './presentation/components/details/details.component';
+import { HomeComponent } from './presentation/pages/home/home.component';
+import { DetailsComponent } from './presentation/pages/details/details.component';
 
 const routeConfig: Routes = [
   {

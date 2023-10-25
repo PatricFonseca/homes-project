@@ -5,7 +5,6 @@ import { HousingLocationEntity } from '../../../data/repository/housing-location
   providedIn: 'root',
 })
 export class HousingService {
-  // readonly baseUrl = 'https://angular.io/assets/images/tutorials/faa';
   url = 'http://localhost:3000/locations';
 
   // housingLocationList: HousingLocation[] = [

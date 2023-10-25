@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HomeComponent } from './presentation/components/home/home.component';
+import { HomeComponent } from './presentation/pages/home/home.component';
 import { RouterModule } from '@angular/router';
 import { FooterComponent } from './presentation/components/footer/footer.component';
 

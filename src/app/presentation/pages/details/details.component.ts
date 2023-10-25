@@ -2,7 +2,7 @@ import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
-import { HousingService } from '../housing-location/housing.service';
+import { HousingService } from '../../components/housing-location/housing.service';
 import { HousingLocationEntity } from '../../../data/repository/housing-location-entity';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {faCoffee} from '@fortawesome/free-solid-svg-icons'

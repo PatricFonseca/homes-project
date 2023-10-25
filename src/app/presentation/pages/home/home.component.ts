@@ -1,11 +1,10 @@
 import { Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HousingLocationComponent } from '../housing-location/housing-location.component';
-// import { HousingLocation } from '../housing-location/housinglocation';
-import { HousingService } from '../housing-location/housing.service';
+import { HousingLocationComponent } from '../../components/housing-location/housing-location.component';
+import { HousingService } from '../../components/housing-location/housing.service';
 import { HousingLocationEntity } from '../../../data/repository/housing-location-entity';
-// import { HousingService } from './housing.service';
-// import { HousingLocation } from '../housing-location/housinglocation';
+import { driver } from 'driver.js';
+import { text } from '@fortawesome/fontawesome-svg-core';
 
 @Component({
   selector: 'app-home',
@@ -14,10 +13,22 @@ import { HousingLocationEntity } from '../../../data/repository/housing-location
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
 })
+
 export class HomeComponent {
   housingLocationList: HousingLocationEntity[] = [];
   housingService: HousingService = inject(HousingService);
   filteredLocationList: HousingLocationEntity[] = [];
+  driverObj = driver();
+
+  ngOnInit() {
+    this.driverObj.highlight({
+      element: "#filter",
+      popover: {
+        title: "Filtro",
+        description: "Pesquise aqui a cidade"
+      }
+    });
+  }
 
   constructor() {
     this.housingService
@@ -26,7 +37,6 @@ export class HomeComponent {
         this.housingLocationList = housingLocationList;
         this.filteredLocationList = housingLocationList;
       });
-    // this.filteredLocationList = this.housingLocationList;
   }
 
   filterResults(text: string) {
@@ -38,5 +48,7 @@ export class HomeComponent {
       (housingLocation) =>
         housingLocation?.city.toLowerCase().includes(text.toLowerCase())
     );
+
+    this.driverObj.destroy();
   }
 }
